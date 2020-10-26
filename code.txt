@@ -1,0 +1,61 @@
+python "F:\专业\reinforcement learning\CS285_Fa19_Deep_Reinforcement_Learning-master\hw2\cs285\scripts\run_hw2_policy_gradient.py" --env_name CartPole-v1 --exp_name test_pg_cartpole
+
+python "F:\专业\reinforcement learning\CS285_Fa19_Deep_Reinforcement_Learning-master\hw2\cs285\scripts\run_hw2_policy_gradient.py" --env_name InvertedPendulum-v2 --exp_name test_pg_pendulum
+
+#PROBLEM3
+python "F:\专业\reinforcement learning\CS285_Fa19_Deep_Reinforcement_Learning-master\hw2\cs285\scripts\run_hw2_policy_gradient.py" --env_name CartPole-v0 -n 100 -b 1000 -dsa --exp_name sb_no_rtg_dsa
+
+python "F:\专业\reinforcement learning\CS285_Fa19_Deep_Reinforcement_Learning-master\hw2\cs285\scripts\run_hw2_policy_gradient.py" --env_name CartPole-v0 -n 100 -b 1000 -rtg -dsa --exp_name sb_rtg_dsa
+
+python "F:\专业\reinforcement learning\CS285_Fa19_Deep_Reinforcement_Learning-master\hw2\cs285\scripts\run_hw2_policy_gradient.py" --env_name CartPole-v0 -n 100 -b 1000 -rtg --exp_name sb_rtg_na
+
+python "F:\专业\reinforcement learning\CS285_Fa19_Deep_Reinforcement_Learning-master\hw2\cs285\scripts\run_hw2_policy_gradient.py" --env_name CartPole-v0 -n 100 -b 5000 -dsa --exp_name lb_no_rtg_dsa
+
+python "F:\专业\reinforcement learning\CS285_Fa19_Deep_Reinforcement_Learning-master\hw2\cs285\scripts\run_hw2_policy_gradient.py" --env_name CartPole-v0 -n 100 -b 5000 -rtg -dsa --exp_name lb_rtg_dsa
+
+python "F:\专业\reinforcement learning\CS285_Fa19_Deep_Reinforcement_Learning-master\hw2\cs285\scripts\run_hw2_policy_gradient.py" --env_name CartPole-v0 -n 100 -b 5000 -rtg --exp_name lb_rtg_na
+
+PROBLEM4
+python "F:\专业\reinforcement learning\CS285_Fa19_Deep_Reinforcement_Learning-master\hw2\cs285\scripts\run_hw2_policy_gradient.py" --env_name InvertedPendulum-v2 --ep_len 1000 --discount 0.9 -n 100 -l 2 -s 64 -b 100 -lr 0.005 -rtg --exp_name ip_b100_r0.005 
+
+
+PROBLEM6
+python "F:\专业\reinforcement learning\CS285_Fa19_Deep_Reinforcement_Learning-master\hw2\cs285\scripts\run_hw2_policy_gradient.py" --env_name LunarLanderContinuous-v2 --ep_len 1000 --discount 0.99 -n 100 -l 2 -s 64 -b 40000 -lr 0.005 -rtg --nn_baseline --exp_name ll_b40000_r0.005}
+
+PROBLEM7
+1)尝试最优的超参数
+python "F:\专业\reinforcement learning\CS285_Fa19_Deep_Reinforcement_Learning-master\hw2\cs285\scripts\run_hw2_policy_gradient.py" --env_name HalfCheetah-v2 --ep_len 150 --discount 0.95 -n 100 -l 2 -s 32 -b 10000 -lr 0.005 --video_log_freq -1 --reward_to_go --nn_baseline --exp_name hc_b10000_lr0.005_nnbaseline
+##########################################
+python "F:\专业\reinforcement learning\CS285_Fa19_Deep_Reinforcement_Learning-master\hw2\cs285\scripts\run_hw2_policy_gradient.py" --env_name HalfCheetah-v2 --ep_len 150 --discount 0.95 -n 100 -l 2 -s 32 -b 30000 -lr 0.005 --video_log_freq -1 --reward_to_go --nn_baseline --exp_name hc_b30000_lr0.005_nnbaseline
+
+python "F:\专业\reinforcement learning\CS285_Fa19_Deep_Reinforcement_Learning-master\hw2\cs285\scripts\run_hw2_policy_gradient.py" --env_name HalfCheetah-v2 --ep_len 150 --discount 0.95 -n 100 -l 2 -s 32 -b 50000 -lr 0.005 --video_log_freq -1 --reward_to_go --nn_baseline --exp_name hc_b50000_lr0.005_nnbaseline
+
+python "F:\专业\reinforcement learning\CS285_Fa19_Deep_Reinforcement_Learning-master\hw2\cs285\scripts\run_hw2_policy_gradient.py" --env_name HalfCheetah-v2 --ep_len 150 --discount 0.95 -n 100 -l 2 -s 32 -b 10000 -lr 0.01 --video_log_freq -1 --reward_to_go --nn_baseline --exp_name hc_b10000_lr0.01_nnbaseline
+
+python "F:\专业\reinforcement learning\CS285_Fa19_Deep_Reinforcement_Learning-master\hw2\cs285\scripts\run_hw2_policy_gradient.py" --env_name HalfCheetah-v2 --ep_len 150 --discount 0.95 -n 100 -l 2 -s 32 -b 30000 -lr 0.01 --video_log_freq -1 --reward_to_go --nn_baseline --exp_name hc_b30000_lr0.01_nnbaseline
+
+python "F:\专业\reinforcement learning\CS285_Fa19_Deep_Reinforcement_Learning-master\hw2\cs285\scripts\run_hw2_policy_gradient.py" --env_name HalfCheetah-v2 --ep_len 150 --discount 0.95 -n 100 -l 2 -s 32 -b 50000 -lr 0.01 --video_log_freq -1 --reward_to_go --nn_baseline --exp_name hc_b50000_lr0.01_nnbaseline
+####
+python "F:\专业\reinforcement learning\CS285_Fa19_Deep_Reinforcement_Learning-master\hw2\cs285\scripts\run_hw2_policy_gradient.py" --env_name HalfCheetah-v2 --ep_len 150 --discount 0.95 -n 100 -l 2 -s 32 -b 10000 -lr 0.02 --video_log_freq -1 --reward_to_go --nn_baseline --exp_name hc_b10000_lr0.02_nnbaseline
+
+python "F:\专业\reinforcement learning\CS285_Fa19_Deep_Reinforcement_Learning-master\hw2\cs285\scripts\run_hw2_policy_gradient.py" --env_name HalfCheetah-v2 --ep_len 150 --discount 0.95 -n 100 -l 2 -s 32 -b 30000 -lr 0.02 --video_log_freq -1 --reward_to_go --nn_baseline --exp_name hc_b30000_lr0.02_nnbaseline
+
+python "F:\专业\reinforcement learning\CS285_Fa19_Deep_Reinforcement_Learning-master\hw2\cs285\scripts\run_hw2_policy_gradient.py" --env_name HalfCheetah-v2 --ep_len 150 --discount 0.95 -n 100 -l 2 -s 32 -b 50000 -lr 0.02 --video_log_freq -1 --reward_to_go --nn_baseline --exp_name hc_b50000_lr0.02_nnbaseline
+
+最优为30000 0.02
+
+python "F:\专业\reinforcement learning\CS285_Fa19_Deep_Reinforcement_Learning-master\hw2\cs285\scripts\run_hw2_policy_gradient.py" --env_name HalfCheetah-v2 --ep_len 150 --discount 0.95 -n 100 -l 2 -s 32 -b 30000 -lr 0.02 --exp_name hc_b30000_r0.02
+
+python "F:\专业\reinforcement learning\CS285_Fa19_Deep_Reinforcement_Learning-master\hw2\cs285\scripts\run_hw2_policy_gradient.py" --env_name HalfCheetah-v2 --ep_len 150 --discount 0.95 -n 100 -l 2 -s 32 -b 30000 -lr 0.02 -rtg --exp_name hc_b30000_r0.02
+
+python "F:\专业\reinforcement learning\CS285_Fa19_Deep_Reinforcement_Learning-master\hw2\cs285\scripts\run_hw2_policy_gradient.py" --env_name HalfCheetah-v2 --ep_len 150 --discount 0.95 -n 100 -l 2 -s 32 -b 30000 -lr 0.02 --nn_baseline --exp_name hc_b30000_r0.02
+
+python "F:\专业\reinforcement learning\CS285_Fa19_Deep_Reinforcement_Learning-master\hw2\cs285\scripts\run_hw2_policy_gradient.py" --env_name HalfCheetah-v2 --ep_len 150 --discount 0.95 -n 100 -l 2 -s 32 -b 30000 -lr 0.02 -rtg --nn_baseline --exp_name hc_b30000_r0.02
+
+
+
+
+
+
+#tensorboard可视化
+tensorboard --logdir="F:\专业\reinforcement learning\CS285_Fa19_Deep_Reinforcement_Learning-master\hw2\run_logs" --host localhost
